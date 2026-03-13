@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bx2ktptq4slj3"]
+
+[ext_resource type="PackedScene" uid="uid://vdqo54083d4v" path="res://assets/models/items/bánh mfi.glb" id="1_fetsx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cs1ga"]
+
+[node name="Banhmi" type="Area3D" unique_id=65352663]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=751030719]
+shape = SubResource("BoxShape3D_cs1ga")
+
+[node name="convert" parent="." unique_id=1085586467 instance=ExtResource("1_fetsx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.64633894, 0)

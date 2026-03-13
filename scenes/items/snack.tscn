@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b5keu15yy2f67"]
+
+[ext_resource type="PackedScene" uid="uid://bm7qk3x2yuqre" path="res://assets/models/items/snack.glb" id="1_j8trh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0m446"]
+
+[node name="Snack" type="Area3D" unique_id=961332317]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
+
+[node name="convert" parent="." unique_id=1813783627 instance=ExtResource("1_j8trh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1133715553]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0.5231807, 0)
+shape = SubResource("BoxShape3D_0m446")

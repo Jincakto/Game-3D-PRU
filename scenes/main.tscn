@@ -17,4 +17,4 @@ transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 
 shadow_enabled = true
 
 [node name="Building" parent="." unique_id=1377487714 instance=ExtResource("1_building")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 5, 0)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4, 5, 0)

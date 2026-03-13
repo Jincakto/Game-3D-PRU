@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://building123"]
 
 [ext_resource type="PackedScene" uid="uid://cr8p3lqel5b3d" path="res://assets/models/floor/floorbasic.glb" id="2_floor"]
-[ext_resource type="PackedScene" uid="uid://b5wab5g5m2k4o" path="res://assets/models/Wall/BasicWall.glb" id="3_wall"]
+[ext_resource type="PackedScene" uid="uid://chhgi315k4fid" path="res://assets/models/wall/BasicWall.glb" id="3_wall"]
 [ext_resource type="PackedScene" uid="uid://cpx1320tk4vee" path="res://assets/models/door/doorbasic.glb" id="4_rla3o"]
 [ext_resource type="PackedScene" uid="uid://dvc7oea7r440c" path="res://assets/models/roof/roofbasic.glb" id="4_roof"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rla3o"]
 
 [node name="Building" type="Node3D" unique_id=163344948]
 
@@ -63,3 +65,8 @@ transform = Transform3D(9, 0, 0, 0, 9, 0, 0, 0, 9, 4, -0.703, -16)
 
 [node name="doorbasic2" parent="." unique_id=22923410 instance=ExtResource("4_rla3o")]
 transform = Transform3D(-9, 0, -7.86805e-07, 0, 9, 0, 7.86805e-07, 0, -9, -4, -0.703, -16)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1900728001]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=197071296]
+shape = SubResource("BoxShape3D_rla3o")

@@ -1,0 +1,160 @@
+[gd_scene format=3 uid="uid://cimdihoq4d5vj"]
+
+[ext_resource type="PackedScene" uid="uid://kcnssjdpxlh8" path="res://assets/models/furniture/shelf/kettulv1.glb" id="1_gt6xd"]
+[ext_resource type="PackedScene" uid="uid://bx2ktptq4slj3" path="res://scenes/items/banhmi.tscn" id="2_6dop6"]
+[ext_resource type="PackedScene" uid="uid://b5keu15yy2f67" path="res://scenes/items/snack.tscn" id="3_um5ci"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gt6xd"]
+size = Vector3(1.5, 1.1347656, 0.6011963)
+
+[node name="Kebanh1" type="StaticBody3D" unique_id=946132793]
+
+[node name="convert" parent="." unique_id=1851661715 instance=ExtResource("1_gt6xd")]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=825767147]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=892871717]
+transform = Transform3D(0.667, 0, 0, 0, 1, 0, 0, 0, 0.667, 0, 0.4326172, 0.035703067)
+shape = SubResource("BoxShape3D_gt6xd")
+
+[node name="Slot" type="Node3D" parent="." unique_id=977165057]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0.77675194, 0.0025336742)
+
+[node name="sl1" type="Marker3D" parent="Slot" unique_id=1980383239]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26205248, 0.15636098, -0.032219008)
+
+[node name="Banhmi" parent="Slot/sl1" unique_id=65352663 instance=ExtResource("2_6dop6")]
+
+[node name="sl2" type="Marker3D" parent="Slot" unique_id=437161431]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26205248, 0.15636098, 0.058825955)
+
+[node name="Snack" parent="Slot/sl2" unique_id=961332317 instance=ExtResource("3_um5ci")]
+
+[node name="sl17" type="Marker3D" parent="Slot" unique_id=790893407]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22993478, -0.14203751, 0.058825955)
+
+[node name="sl18" type="Marker3D" parent="Slot" unique_id=1067799127]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22993478, -0.14203751, 0.15335087)
+
+[node name="sl19" type="Marker3D" parent="Slot" unique_id=1817034066]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26205248, -0.47403717, -0.032219008)
+
+[node name="sl20" type="Marker3D" parent="Slot" unique_id=1109106396]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26205248, -0.47403717, 0.058825955)
+
+[node name="sl21" type="Marker3D" parent="Slot" unique_id=1548342190]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26205248, -0.47403717, 0.15335087)
+
+[node name="sl22" type="Marker3D" parent="Slot" unique_id=1655040117]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00034799002, -0.47403717, -0.032219008)
+
+[node name="sl24" type="Marker3D" parent="Slot" unique_id=1098034993]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00034799002, -0.47403717, 0.15335087)
+
+[node name="sl25" type="Marker3D" parent="Slot" unique_id=683837176]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22993478, -0.47403717, -0.032219008)
+
+[node name="sl3" type="Marker3D" parent="Slot" unique_id=1499394543]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26205248, 0.15636098, 0.15335087)
+
+[node name="sl4" type="Marker3D" parent="Slot" unique_id=742436390]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00034799002, 0.15636098, -0.032219008)
+
+[node name="sl5" type="Marker3D" parent="Slot" unique_id=795150264]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00034799002, 0.15636098, 0.058825955)
+
+[node name="sl6" type="Marker3D" parent="Slot" unique_id=1554894423]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00034799002, 0.15636098, 0.15335087)
+
+[node name="sl7" type="Marker3D" parent="Slot" unique_id=2087037456]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22993478, 0.15636098, -0.032219008)
+
+[node name="sl8" type="Marker3D" parent="Slot" unique_id=922299072]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22993478, 0.15636098, 0.058825955)
+
+[node name="sl9" type="Marker3D" parent="Slot" unique_id=1669138826]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22993478, 0.15636098, 0.15335087)
+
+[node name="sl10" type="Marker3D" parent="Slot" unique_id=1596439875]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26205248, -0.14203751, -0.032219008)
+
+[node name="sl11" type="Marker3D" parent="Slot" unique_id=400016426]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26205248, -0.14203751, 0.058825955)
+
+[node name="sl12" type="Marker3D" parent="Slot" unique_id=1543171110]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26205248, -0.14203751, 0.15335087)
+
+[node name="sl13" type="Marker3D" parent="Slot" unique_id=226869010]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00034799002, -0.14203751, -0.032219008)
+
+[node name="sl14" type="Marker3D" parent="Slot" unique_id=1245082071]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00034799002, -0.14203751, 0.058825955)
+
+[node name="sl15" type="Marker3D" parent="Slot" unique_id=1111316542]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00034799002, -0.14203751, 0.15335087)
+
+[node name="sl16" type="Marker3D" parent="Slot" unique_id=869145702]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22993478, -0.14203751, -0.032219008)
+
+[node name="sl23" type="Marker3D" parent="Slot" unique_id=1876612909]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00034799002, -0.4740371, 0.058825955)
+
+[node name="sl26" type="Marker3D" parent="Slot" unique_id=1789996986]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22993478, -0.47403717, 0.058825955)
+
+[node name="sl27" type="Marker3D" parent="Slot" unique_id=1520852293]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22993478, -0.47403717, 0.15335087)
+
+[node name="sl28" type="Marker3D" parent="Slot" unique_id=997209973]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26205248, -0.70114726, -0.032219008)
+
+[node name="sl29" type="Marker3D" parent="Slot" unique_id=752714412]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26205248, -0.70114726, 0.058825955)
+
+[node name="sl30" type="Marker3D" parent="Slot" unique_id=1357041641]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26205248, -0.70114726, 0.15335087)
+
+[node name="sl31" type="Marker3D" parent="Slot" unique_id=1585720094]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00034799002, -0.70114726, -0.032219008)
+
+[node name="sl32" type="Marker3D" parent="Slot" unique_id=1032491932]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00034799002, -0.70114726, 0.058825955)
+
+[node name="sl33" type="Marker3D" parent="Slot" unique_id=1970621053]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00034799002, -0.70114726, 0.15335087)
+
+[node name="sl34" type="Marker3D" parent="Slot" unique_id=1737708539]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22993478, -0.70114726, -0.032219008)
+
+[node name="sl35" type="Marker3D" parent="Slot" unique_id=806592285]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22993478, -0.70114726, 0.058825955)
+
+[node name="sl36" type="Marker3D" parent="Slot" unique_id=809812928]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22993478, -0.70114726, 0.15335087)
+
+[node name="sl37" type="Marker3D" parent="Slot" unique_id=452800456]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26205248, -1.0032358, -0.032219008)
+
+[node name="sl38" type="Marker3D" parent="Slot" unique_id=569037635]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26205248, -1.0032358, 0.058825955)
+
+[node name="sl39" type="Marker3D" parent="Slot" unique_id=1869629453]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26205248, -1.0032358, 0.15335087)
+
+[node name="sl40" type="Marker3D" parent="Slot" unique_id=463614075]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00034799002, -1.0032358, -0.032219008)
+
+[node name="sl41" type="Marker3D" parent="Slot" unique_id=1463840845]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00034799002, -1.0032358, 0.058825955)
+
+[node name="sl42" type="Marker3D" parent="Slot" unique_id=1340173924]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00034799002, -1.0032358, 0.15335087)
+
+[node name="sl43" type="Marker3D" parent="Slot" unique_id=1442403832]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22993478, -1.0032358, -0.032219008)
+
+[node name="sl44" type="Marker3D" parent="Slot" unique_id=178818442]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22993478, -1.0032358, 0.058825955)
+
+[node name="sl45" type="Marker3D" parent="Slot" unique_id=1911307518]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22993478, -1.0032358, 0.15335087)
